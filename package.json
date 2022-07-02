@@ -7,10 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "cd client && npm run build",
     "install-client": "cd client && npm install",
-    "heroku-postbuild": "cd client && npm install && npm run build",
     "server": "nodemon server.js",
-    "develop": "concurrently --kill-others-on-fail \"npm run server\" \"npm run start --prefix client\"",
-    "start": "concurrently --kill-other-on-fail \"npm run server\" \"npm run start --prefix client\""
+    "start": "react-scripts start"
   },
   "keywords": [],
   "author": "",
